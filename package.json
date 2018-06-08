@@ -1,0 +1,19 @@
+{
+  "name": "commportal",
+  "version": "1.0.0",
+  "description": "Communicus Client Portals",
+  "main": "app.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon app.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "author": "Anthony Rivas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
